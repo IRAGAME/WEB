@@ -1,0 +1,99 @@
+/* ===== VARIANTES DE BACKGROUND ===== */
+
+/* Pour utiliser une variante, décommentez la section souhaitée dans style.css */
+
+/* Variante 1: Dégradé médical bleu-vert */
+.bg-variant-1 {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+/* Variante 2: Dégradé bleu professionnel */
+.bg-variant-2 {
+  background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+}
+
+/* Variante 3: Dégradé vert santé */
+.bg-variant-3 {
+  background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
+}
+
+/* Variante 4: Dégradé violet moderne */
+.bg-variant-4 {
+  background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+}
+
+/* Variante 5: Dégradé orange chaleureux */
+.bg-variant-5 {
+  background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
+}
+
+/* Variante 6: Dégradé avec image de fond */
+.bg-variant-6 {
+  background: linear-gradient(135deg, rgba(102, 126, 234, 0.9) 0%, rgba(118, 75, 162, 0.9) 100%), url('back4.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+/* Variante 7: Dégradé avec image médicale */
+.bg-variant-7 {
+  background: linear-gradient(135deg, rgba(79, 172, 254, 0.9) 0%, rgba(0, 242, 254, 0.9) 100%), url('back3.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+/* Variante 8: Dégradé avec motif géométrique */
+.bg-variant-8 {
+  background: 
+    linear-gradient(135deg, #667eea 0%, #764ba2 100%),
+    radial-gradient(circle at 20% 80%, rgba(120, 119, 198, 0.3) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, rgba(255, 119, 198, 0.3) 0%, transparent 50%);
+}
+
+/* Variante 9: Dégradé animé (CSS animation) */
+.bg-variant-9 {
+  background: linear-gradient(-45deg, #667eea, #764ba2, #4facfe, #00f2fe);
+  background-size: 400% 400%;
+  animation: gradientShift 15s ease infinite;
+}
+
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Variante 10: Dégradé avec effet de particules */
+.bg-variant-10 {
+  background: 
+    linear-gradient(135deg, #667eea 0%, #764ba2 100%),
+    radial-gradient(circle at 25% 25%, rgba(255, 255, 255, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 75% 75%, rgba(255, 255, 255, 0.1) 0%, transparent 50%);
+}
+
+/* Classes utilitaires pour changer rapidement le background */
+.bg-medical-blue { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); }
+.bg-professional-blue { background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); }
+.bg-health-green { background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%); }
+.bg-modern-purple { background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%); }
+.bg-warm-orange { background: linear-gradient(135deg, #fa709a 0%, #fee140 100%); }
+
+/* Instructions d'utilisation :
+ * Pour changer le background, remplacez la classe 'body' dans style.css
+ * ou ajoutez une de ces classes à l'élément body dans le HTML
+ * 
+ * Exemple dans style.css :
+ * body {
+ *   background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+ * }
+ * 
+ * Ou dans HTML :
+ * <body class="bg-professional-blue">
+ */ 
